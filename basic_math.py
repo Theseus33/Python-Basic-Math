@@ -71,13 +71,24 @@ returns the following
 
 so if you actually want a backslash you need \\ or else Python will think its the start of an escape char
 
-  
+#String Concatenation
+Concatenation is combining multiple strings together. In Python you can do this with the "+" operator.
 
+str_one = "your"
+str_two = "face"
+str_three = str_one + " " + str_two
+#your face
 
-so if you actually want a backslash you need \\ or else Python will think its the start of an escape char
+#String Formatting
+There are also several ways to format strings in Python to interpolate variables.
+The new way (new in Python 3.6+) => F-Strings
 
+x = 10
+formatted = f"I've told you {x} times already!"
 
+The tried  and true way (Python 2-> 3.5) => .format method
 
-
+X = 10 
+formatted " I've told you {} to,es aleady!".format(10)
 
 

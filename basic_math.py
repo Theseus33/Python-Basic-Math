@@ -99,3 +99,47 @@ int(99.4443)
 99
 int(99.99)
 99
+
+#User Input
+There is a built-inb function in Python called "input" that will prompt the user and store the result 
+in a variable.
+
+name = input("Enter your name here: ")
+Enter your name here:
+
+#Conditional Statements
+
+Conditional logic using if statements represents different paths a program can take based on some type
+of comparison of input
+
+pseudocode
+
+if some condition is True:
+    do something
+elif some other condition is True:
+    do something
+else: 
+    do something
+
+example
+
+if name == "Arya Stark":
+    print("Valar Morghulis")
+elif ma,e == "Jon Snow":
+    print("You know nothing")
+else:
+    print("Carry on")
+
+#Truthiness
+
+In Python, all conditional checks resolve to True or False.bit_length
+
+x = 1
+x is 1 #True
+x is 0 #False
+
+We can call values that will resolve to True "truthy", or values that will resolve to False "falsy".capitalize
+
+Besides False ocnditional checks, other things that are naturally falsy include: empty objects, empty strings,
+None, and zero.
+

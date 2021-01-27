@@ -71,24 +71,31 @@ returns the following
 
 so if you actually want a backslash you need \\ or else Python will think its the start of an escape char
 
-#String Concatenation
-Concatenation is combining multiple strings together. In Python you can do this with the "+" operator.
-
-str_one = "your"
-str_two = "face"
-str_three = str_one + " " + str_two
-#your face
-
-#String Formatting
-There are also several ways to format strings in Python to interpolate variables.
-The new way (new in Python 3.6+) => F-Strings
-
-x = 10
-formatted = f"I've told you {x} times already!"
-
-The tried  and true way (Python 2-> 3.5) => .format method
-
-X = 10 
-formatted " I've told you {} to,es aleady!".format(10)
+  
 
 
+so if you actually want a backslash you need \\ or else Python will think its the start of an escape char
+
+
+#Converting Data Types
+
+In string interpolation, data types are implicitly converted into string form.
+You can also explicitly convert variables by using the name of the builtin type as a function.
+
+decimal = 12.563456344534
+integer = int(decimal) #12 but does not round up/down
+
+my_list = [1, 2, 3]
+my_list_as_a_string = str(my_list) #"[1, 2, 3]"
+
+num = 12
+type(num)
+>num = float(num)
+type(num)
+<class 'float'>
+num 
+12.0
+int(99.4443)
+99
+int(99.99)
+99

@@ -143,3 +143,13 @@ We can call values that will resolve to True "truthy", or values that will resol
 Besides False ocnditional checks, other things that are naturally falsy include: empty objects, empty strings,
 None, and zero.
 
+#Comparison Operators
+if a = 1 and b = 1
+
+Operator    What it does                                    example
+
+==          Truthy if a has the same value as b             a==b #True
+!=          Truthy if a does NOT havet he same value as b   a!=b #False
+>           Truthy if a is greater than b                   a>b #False
+<           Truthy if a is less than b                      a<b #False
+>=

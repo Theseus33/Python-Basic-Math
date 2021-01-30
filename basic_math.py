@@ -152,4 +152,33 @@ Operator    What it does                                    example
 !=          Truthy if a does NOT havet he same value as b   a!=b #False
 >           Truthy if a is greater than b                   a>b #False
 <           Truthy if a is less than b                      a<b #False
->=
+>=          Truthy if a greater than or equal to b          a>=b #True
+<=          Truthy if a is less than or equal to b          a<=b #True
+
+#Logical Operators
+
+In Python, the following operators can be used to make Boolean Logic comparisons or statements:
+
+Operator    What it does                                    example
+
+and         Truthy if both a AND b are True                 if a and b:
+            (logical conjunction)                               print(c)
+
+or          Truthy if either a OR b are True                if am_tired or is_bedtime:
+            (logical disjunction)                               print("go to sleep")
+
+not         Truthy if the opposite of a is True             if not is_weekend:
+            (logical negation)                                  print("go to work")
+
+
+from random import choice
+food = choice(['apple','grape', 'bacon', 'steak', 'worm', 'dirt'])
+
+if food == 'apple' or food == 'grape':
+    print("fruit")
+elif food == 'bacon' or food == 'steak':
+    print("meat")
+else:
+    print("yuck")
+
+

@@ -182,3 +182,46 @@ else:
     print("yuck")
 
 
+age = 21
+# 2-8 2 dollar ticket
+# 65 5 dollar ticket
+# 10 dollar ticket
+
+(age >= 2 and age <= 8) or (age >=65 )
+
+#Note on Is Vs ==
+In Python "==" and "is" are very similar comparators, however they are not the same.
+
+a = 1
+a == 1 #True
+a is 1 #True
+
+a = [1,2,3] # a list of numbers
+b = [1,2,3] 
+a == b #True
+a is b #False
+
+If you want to check values use "=="
+while is checks if the variable is in the same place in memory.
+
+x = 13
+y = 13
+x == y #True
+x is y #True (because its not a new object in memory but the same value)
+
+a = [1,2]
+b = [1,2]
+a == n #True
+a is b #False (because although the values are the same they are two seperate objects in memory)
+
+#Bouncer Code - Along and Nested Conditionals
+
+#ask for age
+age = input("How old are you:")
+
+if int(age) >= 18 and int(age) < 21:
+    print("You can enter, but need a wristband!")
+# 18-21 wristband
+# 21+ drink, normal entry
+# too young sorry
+

@@ -379,14 +379,18 @@ List items are ordered, changeable, and allow duplicate values.
 List items are indexed, the first item has index [0], the second item has index [1] etc.
 Ordered
 
-When we say that lists are ordered, it means that the items have a defined order, and that order will not change.
+When we say that lists are ordered, it means that the items have a defined order, and that 
+order will not change.
 
 If you add new items to a list, the new items will be placed at the end of the list.
 
-Note: There are some list methods that will change the order, but in general: the order of the items will not change.
+Note: There are some list methods that will change the order, but in general: the order of 
+the items will not change.
 Changeable
 
-The list is changeable, meaning that we can change, add, and remove items in a list after it has been created.
+The list is changeable, meaning that we can change, add, and remove items in a list after 
+it has been created.
+
 Allow Duplicates
 
 Since lists are indexed, lists can have items with the same value:
@@ -444,4 +448,57 @@ There are four collection data types in the Python programming language:
     Set is a collection which is unordered and unindexed. No duplicate members.
     Dictionary is a collection which is unordered and changeable. No duplicate members.
 
-When choosing a collection type, it is useful to understand the properties of that type. Choosing the right type for a particular data set could mean retention of meaning, and, it could mean an increase in efficiency or security.
+When choosing a collection type, it is useful to understand the properties of that type. 
+Choosing the right type for a particular data set could mean retention of meaning, and, it 
+could mean an increase in efficiency or security.
+
+Pop 
+rRemove the item at the given position in the list and return it.
+If no index is specified, removes and returns last item in the list
+
+first_list = [1.2 3. 4]
+first_list.pop() #4
+first_list.pop(1) #2
+
+Index 
+Returns the index of the specified item on the list
+
+numbers = [5, 6, 7, 8, 9, 10]
+
+numbers.index(6) # 1
+numbers.index(9) # 4
+
+numbers = [5, 5, 6, 7, 5 , 8, 8, 9, 10]
+
+numbers.index(5) # 0
+numbers.index(5, 1) #1
+numbers.index(5, 2) #4
+
+numbers.index(8, 6, 8) #6
+
+slice
+
+Make new lists using slices of the old list
+
+some_list[start:end:step]
+
+first parameter for Slice:StopIteration
+what index to start slicing from
+
+first_list = [1, 2, 3, 4]
+first_list[1:] # [2, 3, 4]
+first_list[3:] #[4]
+
+colors = ["red", "orange", "yellow", "green", "blue,
+"indigo", "violet"]
+
+colors[2:] # ["green", "blue,"indigo", "violet"]
+
+Second Parameter for slice :end
+
+The index to copy up to (exclusive counting)
+
+first_list = [1, 2, 3, 4]
+first_list[:2] #[1, 2, 3]
+first_list[1:3] #[2, 3]
+
